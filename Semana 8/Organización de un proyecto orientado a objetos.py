@@ -4,7 +4,7 @@ import os
 def mostrar_codigo(ruta_script):
     """Lee y muestra el contenido del archivo"""
     if not os.path.isfile(ruta_script):
-        print(f"⚠️ El archivo no se encontró: {ruta_script}")
+        print(f" El archivo no se encontró: {ruta_script}")
         return
 
     try:
@@ -12,7 +12,7 @@ def mostrar_codigo(ruta_script):
             print(f"\n--- Código de {os.path.basename(ruta_script)} ---\n")
             print(archivo.read())
     except Exception as e:
-        print(f"❌ Ocurrió un error al leer el archivo: {e}")
+        print(f" Ocurrió un error al leer el archivo: {e}")
 
 
 def mostrar_menu():
@@ -49,7 +49,7 @@ def mostrar_menu():
         elif eleccion in opciones:
             mostrar_codigo(opciones[eleccion])
         else:
-            print("⚠️ Opción no válida. Intenta de nuevo.")
+            print(" Opción no válida. Intenta de nuevo.")
 
 
 # Ejecutar el menú solo si el script es el principal
