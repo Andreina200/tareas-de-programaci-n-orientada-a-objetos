@@ -18,10 +18,10 @@ def mostrar_codigo(ruta_script):
 def mostrar_menu():
     """Muestra el menú con los scripts disponibles y permite seleccionarlos"""
 
-    # 🔹 Ruta base del proyecto (ajusta esta línea si es necesario)
+    #  Ruta base del proyecto (ajusta esta línea si es necesario)
     ruta_base = r"C:\Users\ORTEL\OneDrive - Universidad Estatal Amazónica\tareas-de-programaci-n-orientada-a-objeto"
 
-    # 🔹 Diccionario con las opciones del menú
+    #  Diccionario con las opciones del menú
     opciones = {
         "1": os.path.join(ruta_base, "Semana 3", "POO.py"),
         "2": os.path.join(ruta_base, "Semana 3", "Programación tradicional.py"),
